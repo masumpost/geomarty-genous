@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Of Those Question</title>
+
+    <!-- tailwind and daisyUI links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-12">
+    <header>
+        <h1 class="text-5xl font-bold text-center my-12">Question and Answers</h1>
+    </header>
+    <main>
+        <h3 class="text-2xl font-semibold">1. What is DOM and what is the purpose of DOM?</h3><br>
+        <p>
+            <span class="font-semibold">Answer:</span> Basically DOM means 'Document Object Model'. <br>
+
+            By this method we can change style, structure and content. And those html pages is going to interactive by DOM. 
+        </p>
+        <br>
+        <h3 class="text-2xl font-semibold">2. How will you select HTML elements using DOM? Name the DOM methods.</h3> <br>
+        <p>
+            <span class="font-semibold">Answer:</span> I can select any HTML elements by js DOM selector . There are 5 ways to get HTML elements .
+        </p> <br>
+            <ul>
+                <li>1. getElementsByTagName()</li>
+                <li>2. getElementsByClassName()</li>
+                <li>3. getElementById()</li>
+                <li>4. querySelector()</li>
+                <li>5. querySelectorAll()</li>
+            </ul>
+            <br>
+        <h3 class="text-2xl font-semibold">3. What is event bubble?</h3><br>
+
+        <p>
+            <span class="font-semibold">Answer:</span> Event bubbling is a method of event propagation in the HTML DOM. It is happening in two ways.
+        </p> 
+        <br>
+        <h3 class="text-2xl font-semibold">4. What is a callback function and why will you use it?</h3> <br>
+        <p>
+            <span>Answer:</span>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. <br>
+            We need callback functions because many JavaScript actions are asynchronous, which means they don't really stop the program (or a function) from running until they're completed, as you're probably used to. Instead, it will execute in the background while the rest of the code runs.
+        </p>
+    </main>
+    <footer>
+        <div class="mt-12">
+            <button id="main-page" class="btn btn-active btn-secondary">Going To Min Page</button>
+        </div>
+    </footer>
+
+    <!-- js file -->
+    <script src="js/style.js"></script>
+    <script src="js/answer.js"></script>
+</body> 
+</html>
