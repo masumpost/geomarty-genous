@@ -27,3 +27,11 @@ document.getElementById('third-cal-btn').addEventListener('click', function(){
     let tName = document.getElementById('third-name').innerText;
     getTableValue(3, tName, area);
 });
+document.getElementById('fourth-cal-btn').addEventListener('click', function(){
+    let fourthInput1 = textValue('fourth-input1');
+    let fourthInput2 = textValue('fourth-input2');
+    let calculateArea = 0.5 * fourthInput1 * fourthInput2;
+    let area = calculateArea.toFixed(2);
+    let forName = document.getElementById('fourth-name').innerText;
+    getTableValue(4, forName, area);
+});
