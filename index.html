@@ -27,142 +27,153 @@
     </header>
     <main>
 
+<div class="flex flex-col md:flex-row lg:flex-row">
+    <div class="grid md:grid-cols-3 lg:gird-cold-3 md:w-[70%] lg:w-[70%] mt-10 gap-4">
 
-    <div class="grid md:grid-cols-3 lg:gird-cold-3 md:w-[75%] mt-10 gap-4">
+              <!-- first cart -->
 
                 <div class="card w-full bg-base-100 shadow-xl my-5">
                 <figure class="px-10 pt-10">
                   <img src="images/triangle.png" alt="triangle" class="" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Triangle</h2>
+                  <h2 id="first-name" class="card-title">Triangle</h2>
                   <p>Area (A) = 0.5 * b * h</p>
                   <div class="flex gap-2 mb-4">
                     <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="b"> cm 
+                        <input id="first-input1" class="w-12 bg-slate-100" type="text" placeholder="b"> cm 
                     </div>
                     <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="h"> cm
+                        <input id="first-input2" class="w-12 bg-slate-100" type="text" placeholder="h"> cm
                     </div>
                   </div>
                   <div class="card-actions">
-                    <button class="btn px-16 bg-green-500">Calculate</button>
+                    <button id="first-cal-btn" class="btn px-16 bg-green-500">Calculate</button>
                   </div>
                 </div>
               </div>
-    
-            
+              
+              <!-- second cart -->
+              
             <div class="card w-full bg-base-100 shadow-xl my-5">
                 <figure class="px-10 pt-10">
                   <img src="images/rectangle.png" alt="rectangle" class="" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Rectangle</h2>
+                  <h2 id="second-name" class="card-title">Rectangle</h2>
                   <p>Area (A) = w * i</p>
                   <div class="flex gap-2 mb-4">
                     <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder=""w> cm 
+                        <input id="second-input1" class="w-12 bg-slate-100" type="text" placeholder=""w> cm 
                     </div>
                     <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="i"> cm
+                        <input id="second-input2" class="w-12 bg-slate-100" type="text" placeholder="i"> cm
                     </div>
                   </div>
                   <div class="card-actions">
-                    <button class="btn px-16 bg-green-500">Calculate</button>
+                    <button id="second-cal-btn" class="btn px-16 bg-green-500">Calculate</button>
                   </div>
                 </div>
               </div>
             
+              <!-- third cart -->
+
             <div class="card w-full bg-base-100 shadow-xl my-5">
                 <figure class="px-10 pt-10">
                   <img src="images/parallelogram.png" alt="parallelogram" class="" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Parallelogram</h2>
+                  <h2 id="third-name" class="card-title">Parallelogram</h2>
                   <p>Area (A) = d * h </p>
-                  <div class="flex gap-2 mb-4">
-                    <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="d"> cm 
-                    </div>
-                    <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="h"> cm
-                    </div>
-                  </div>
+                  <p class="text-xl">b=<span id="third-input1">10</span>cm, h=<span id="third-input2">12</span>cm</p>
                   <div class="card-actions">
-                    <button class="btn px-16 bg-green-500">Calculate</button>
+                    <button id="third-cal-btn" class="btn px-16 bg-green-500">Calculate</button>
                   </div>
                 </div>
               </div>
             
+              <!-- fourth cart -->
+
             <div class="card w-full bg-base-100 shadow-xl my-5">
                 <figure class="px-10 pt-10">
                   <img src="images/rhombus.png" alt="rhombus" class="" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Rhombus</h2>
+                  <h2 id="fourth-name" class="card-title">Rhombus</h2>
                   <p>Area (A) = 0.5 * d<sub>1</sub> * d <sub>2</sub></p>
-                  <div class="flex gap-2 mb-4">
-                    <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="d1"> cm 
-                    </div>
-                    <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="d2"> cm
-                    </div>
-                  </div>
+                  <p class="text-xl">d<sup>1</sup>= <span id="fourth-input1">16</span>cm d <sup>2</sup>= <span id="fourth-input2">8</span>cm</p>
                   <div class="card-actions">
-                    <button class="btn px-16 bg-green-500">Calculate</button>
+                    <button id="fourth-cal-btn" class="btn px-16 bg-green-500">Calculate</button>
                   </div>
                 </div>
               </div>
             
+              <!-- fifth cart -->
+
             <div class="card w-full bg-base-100 shadow-xl my-5">
                 <figure class="px-10 pt-10">
                   <img src="images/pentagon.png" alt="pentagon" class="" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Triangle</h2>
+                  <h2 id="fifth-name" class="card-title">Pentagon</h2>
                   <p>Area (A) = 0.5 * p * b</p>
-                  <div class="flex gap-2 mb-4">
-                    <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="p"> cm 
-                    </div>
-                    <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="b"> cm
-                    </div>
-                  </div>
+                  <p>p=<span id="fifth-input1">6</span>cm, p=<span id="fifth-input2">10</span>cm</p>
                   <div class="card-actions">
-                    <button class="btn px-16 bg-green-500">Calculate</button>
+                    <button id="fifth-cal-btn" class="btn px-16 bg-green-500">Calculate</button>
                   </div>
                 </div>
               </div>
             
+              <!-- sixth cart -->
+
             <div class="card w-full bg-base-100 shadow-xl my-5">
                 <figure class="px-10 pt-10">
                   <img src="images/ellipse.png" alt="ellipse" class="" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Triangle</h2>
+                  <h2 id="sixth-name" class="card-title">Ellipse</h2>
                   <p>Area (A) = πab </p>
-                  <div class="flex gap-2 mb-4">
-                    <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="a"> cm 
-                    </div>
-                    <div class="">
-                        <input class="w-12 bg-slate-100" type="text" placeholder="b"> cm
-                    </div>
-                  </div>
+                  <p>a=<span id="sixth-input1">10</span>cm, b=<span id="sixth-input2">4</span>cm</p>
                   <div class="card-actions">
-                    <button class="btn px-16 bg-green-500">Calculate</button>
+                    <button id="sixth-cal-btn" class="btn px-16 bg-green-500">Calculate</button>
                   </div>
                 </div>
               </div>
     </div>
         
+    <!-- calculate table -->
+<div class="w-full md:w-[30%] lg:[30%] mt-10 md:ml-4">
+  <h3 class="text-2xl font-bold underline text-center mb-4 mt-10">Area Calculation</h3>
+  <div class="overflow-x-auto">
+    <table class="table table-zebra w-full">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Total</th>
+          <th>Convert</th>
+        </tr>
+      </thead>
+      <tbody id="table-container">
+        <!-- row 1
 
-
+        <tr>
+          <th>1</th>
+          <td>Cy Ganderton</td>
+          <td>Quality Control Specialist</td>
+          <td>Blue</td>
+        </tr> -->
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+  </div>
     </main>
 
     <!-- js file is here -->
+    <script src="js/felements.js"></script>
     <script src="js/style.js"></script>
 </body>
 </html>
