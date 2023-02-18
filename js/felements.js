@@ -1,9 +1,25 @@
+// function inputValue(idName){ 
+//         let input1 = document.getElementById(idName);
+//         let input1Value = input1.value;
+//         let input = parseFloat(input1Value);
+//         return input;
+// }
 function inputValue(idName){
+
         let input1 = document.getElementById(idName);
         let input1Value = input1.value;
         let input = parseFloat(input1Value);
-        return input;
+
+        if(input < 0 ){
+                alert('input a number');
+        }
+        else{
+
+                return input;
+        }
 }
+
+
 function textValue(idName){
         let input1 = document.getElementById(idName);
         let input1Value = input1.innerText;
