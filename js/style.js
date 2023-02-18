@@ -19,3 +19,11 @@ document.getElementById('second-cal-btn').addEventListener('click', function(){
     let sName = document.getElementById('second-name').innerText;
     getTableValue(2, sName, area);
 });
+document.getElementById('third-cal-btn').addEventListener('click', function(){
+    let thirdInput1 = textValue('third-input1');
+    let thirdInput2 = textValue('third-input2');
+    let calculateArea = thirdInput1 * thirdInput2;
+    let area = calculateArea.toFixed(2);
+    let tName = document.getElementById('third-name').innerText;
+    getTableValue(3, tName, area);
+});
