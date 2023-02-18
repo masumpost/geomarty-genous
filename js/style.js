@@ -11,3 +11,11 @@ document.getElementById('first-cal-btn').addEventListener('click', function(){
     let fName = document.getElementById('first-name').innerText;
     getTableValue(1, fName, area);
 });
+document.getElementById('second-cal-btn').addEventListener('click', function(){
+    let secondInput1 = inputValue('second-input1');
+    let secondInput2 = inputValue('second-input2');
+    let calculateArea = secondInput1 * secondInput2;
+    let area = calculateArea.toFixed(2);
+    let sName = document.getElementById('second-name').innerText;
+    getTableValue(2, sName, area);
+});
