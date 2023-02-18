@@ -35,3 +35,12 @@ document.getElementById('fourth-cal-btn').addEventListener('click', function(){
     let forName = document.getElementById('fourth-name').innerText;
     getTableValue(4, forName, area);
 });
+document.getElementById('fifth-cal-btn').addEventListener('click', function(){
+    let fifthInput1 = textValue('fifth-input1');
+    let fifthInput2 = textValue('fifth-input2');
+    let calculateArea = 0.5 * fifthInput1 * fifthInput2;
+    let area = calculateArea.toFixed(2);
+    let fifName = document.getElementById('fifth-name').innerText;
+    getTableValue(5, fifName, area);
+});
+
